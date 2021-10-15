@@ -10,7 +10,7 @@ public class Player {
     public int games;
     public String club;
 
-    public Player(){
+    public Player() {
 
     }
 
@@ -71,6 +71,12 @@ public class Player {
 
     public void setWinners(int winners) {
         this.winners = winners;
+    }
+
+    @Override
+    public String toString() {
+        return "Player [age=" + age + ", club=" + club + ", games=" + games + ", icon=" + icon + ", id=" + id
+                + ", name=" + name + ", national=" + national + ", winners=" + winners + "]";
     }
 
     public int getGames() {
